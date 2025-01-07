@@ -11,24 +11,34 @@
     <style>
         /* 배경색과 폰트 설정 */
         body {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             font-family: 'Roboto', sans-serif;
         }
         /* 카드 스타일 설정 */
         .card {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         /* 카드 헤더 스타일 설정 */
         .card-header {
-            background-color: #3f51b5;
+            background-color: #1a73e8;
             color: white;
-            border-radius: 10px 10px 0 0;
+            border-radius: 8px 8px 0 0;
             padding: 16px;
         }
         /* 버튼 스타일 설정 */
         .btn {
             margin: 4px;
+            border-radius: 4px;
+        }
+        .input-field input[type=text]:focus + label,
+        .input-field input[type=email]:focus + label {
+            color: #1a73e8;
+        }
+        .input-field input[type=text]:focus,
+        .input-field input[type=email]:focus {
+            border-bottom: 1px solid #1a73e8;
+            box-shadow: 0 1px 0 0 #1a73e8;
         }
     </style>
 </head>
